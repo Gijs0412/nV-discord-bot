@@ -29,13 +29,11 @@ client.on('message', async message => {
     if(message.author.bot) return;
     if(message.channel.type === 'dm') return;
 
-    let prefix = 'nv '
+    let prefix = '$'
     let messageArray = message.content.split(' ');
     let command = messageArray[0];
     let args = command.slice(1);
-    console.log(command);
-    console.log(command.slice(prefix.length));
-    console.log(args);
+    
     let commandFile = client.commands.get(command.slice(prefix.length));
     if(commandFile) commandFile.run(client, message, args);
 });
