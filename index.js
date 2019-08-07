@@ -32,7 +32,7 @@ client.on('message', async message => {
     let prefix = '$'
     let messageArray = message.content.split(' ');
     let command = messageArray[0];
-    let args = command.slice(1);
+    let args = messageArray.slice(1);
     
     let commandFile = client.commands.get(command.slice(prefix.length));
     if(commandFile) commandFile.run(client, message, args);

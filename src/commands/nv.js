@@ -2,7 +2,6 @@ const Discord = require('discord.js');
 
 module.exports.run = async (client, message, args) => {
     if(!args[0]) return message.reply('You meant $nv info, right?');
-    console.log(args[0]);
         if(args[0] === 'info') {
             let nvInfoEmbed = new Discord.RichEmbed()
             .setTitle('Clan Information')
