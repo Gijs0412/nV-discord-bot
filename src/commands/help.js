@@ -5,8 +5,9 @@ module.exports.run = async (client, message, args) => {
         .setTitle('Help Documentation')
         .setColor('#7a0ce8')
         .addField('help', 'Displays this message.')
+        .addField('botinfo', 'Displays basic info about the bot.')
         .addField('nv <argument>', 'Displays different types of information about nV depending the argument that you use.')
-        .setFooter('coded by byto#9268')
+        .setFooter('Coded by byto#9268')
     message.channel.send(helpEmbed);
 };
 
