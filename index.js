@@ -32,9 +32,8 @@ client.on('message', async message => {
     let prefix = 'nv'
     let messageArray = message.content.split(' ');
     let command = messageArray[0];
-    console.log(command)
-    let args = command.slice(1);
-    console.log(args)
+    let args = command.slice(2);
+
     let commandFile = client.commands.get(command.slice(prefix.length));
     if(commandFile) commandFile.run(client, message, args);
 });
