@@ -7,10 +7,10 @@ module.exports.run = async (client, message, args) => {
         .addField('Written in', 'JavaScript')
         .addField('Library', 'discord.js')
         .addField('About nVBot', 'nV Krunker is the official bot for the nV krunker.io clan.')
-        .setFooter('Coded by Byto#9268')
+        .setFooter('coded by byto#9268')
     return message.channel.send(infoEmbed);
 };
 
 module.exports.help = {
-    name: 'bot-info'
+    name: 'bot info'
 };
