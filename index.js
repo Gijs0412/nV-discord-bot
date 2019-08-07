@@ -34,7 +34,7 @@ client.on('message', async message => {
     let command = messageArray[0];
     let args = command.slice(1);
 
-    let commandFile = client.command.get(command.slice(prefix.length));
+    let commandFile = client.commands.get(command.slice(prefix.length));
     if(commandFile) commandFile.run(client, message, args);
 });
 
