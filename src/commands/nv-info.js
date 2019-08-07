@@ -5,13 +5,13 @@ module.exports.run = async (client, message, args) => {
         .setTitle('Clan Information')
         .setColor('#7a0ce8')
         .addField('Server Owner', `${message.guild.owner}`)
-        .addBlankField(true)
+        .addField('\u200B', '\u200B')
         .addField('Clan Owner(s)', 'Zahseh, Gaius, Tahha, Zimcro')
-        .addBlankField(true)
+        .addField('\u200B', '\u200B')
         .addField('Discord Server Creation Date', `${message.guild.createdAt}`)
-        .addBlankField(true)
+        .addField('\u200B', '\u200B')
         .addField('In-game Clan Creation Date', 'nV was created at 3/03/2019')
-        .addBlankField(true)
+        .addField('\u200B', '\u200B')
         .addField('Clan Description', 'nV is the top competitive clan in krunker.io, we got 1st place in Krunker Global winning a total of 1.4k dollars and won an overall amount of 1,587 dollars. nV #1')
     return message.channel.send(nvInfoEmbed);
 };
