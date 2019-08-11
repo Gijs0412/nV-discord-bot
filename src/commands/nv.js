@@ -16,7 +16,7 @@ module.exports.run = async (client, message, args) => {
         return message.channel.send(nvInfoEmbed);
     }
     else if (args[0] === 'logo') {
-        return message.channel.send('https://media.discordapp.net/attachments/572282129275158548/608514430166106123/image0.png?width=301&height=301')
+        return message.channel.send('https://media.discordapp.net/attachments/572282129275158548/608514430166106123/image0.png')
     }
     else {return;}
      
