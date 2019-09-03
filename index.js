@@ -22,7 +22,7 @@ fs.readdir("./src/commands/", (err, files) => {
 
 client.on('ready', async () => {
     console.log('Client connected.');
-    client.user.setActivity('nV win', {type: 'WATCHING'});
+    client.user.setActivity('$help', {type: 'WATCHING'});
 });
 
 client.on('message', async message => {
